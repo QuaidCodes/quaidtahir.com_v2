@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+html,
+body,
+#__next {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@theme {
+  --color-black-100: #000319;
+  --color-portfolio-headings: #203e5f;
+  --color-portfolio-content: white;
+}
+
+@layer components {
+  .hero-btns {
+    @apply transition-all duration-300 ease-in-out border-2 text-lg border-[#00aaa0] px-8 py-1 mr-5 rounded font-semibold hover:bg-[#00aaa0] hover:text-white;
+  }
+}
+
+.contact-input {
+  @apply capitalize w-full border-b border-white outline-none px-1;
+}
+
+.contact-input:focus {
+  @apply border-b-2 border-[#00aaa0];
+}
+
+.portfolio-headings {
+  @apply text-lg md:text-2xl font-semibold text-gray-200 uppercase tracking-wide md:mb-1;
+}
+
+.portfolio-subheadings {
+  @apply md:text-xl text-sm md:font-bold md:mb-1 text-gray-400;
+}
+
+.portfolio-content {
+  @apply text-sm md:text-lg text-gray-400 max-w-3xl;
+}
+
+.portfolio-btns {
+  @apply inline-block px-6 py-3 rounded-lg border border-gray-600 text-gray-500 font-semibold hover:border-white hover:text-white transition text-nowrap text-center;
+}

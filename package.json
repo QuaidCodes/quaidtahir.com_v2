@@ -1,42 +1,25 @@
 {
-  "name": "quaid_tahir_portfolio",
+  "name": "quaidtahir.com_v2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint"
   },
   "dependencies": {
-    "@heroui/react": "^2.7.10",
-    "@heroui/system": "^2.4.17",
-    "@heroui/tabs": "^2.2.18",
-    "@heroui/theme": "^2.4.17",
-    "@tabler/icons-react": "^3.34.0",
-    "clsx": "^2.1.1",
-    "framer-motion": "^12.18.1",
-    "github-calendar": "^2.3.4",
-    "motion": "^12.18.1",
-    "next": "15.3.3",
-    "next-themes": "^0.4.6",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-github-calendar": "^4.5.7",
-    "react-icons": "^5.5.0",
-    "recharts": "^3.0.0",
-    "resend": "^4.6.0",
-    "tailwind-merge": "^3.3.1",
-    "zod": "^3.25.67"
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.3.3",
+    "eslint-config-next": "16.1.6",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

@@ -1,9 +1,11 @@
-
-
 export default function DashboardLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  return <section>{children}</section>
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
 }

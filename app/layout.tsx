@@ -1,11 +1,16 @@
-export default function DashboardLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+"use client";
+
+import Header from "@/app/components/Header";
+
+import "./globals.css";
+
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <>
+      <Header />
+      <html lang="en">
+        <body>{children}</body>
+      </html>
+    </>
   );
 }

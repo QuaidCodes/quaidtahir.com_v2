@@ -1,0 +1,10 @@
+
+@import "tailwindcss";
+
+html {
+    @apply bg-[#DFD0B8] text-black ;
+}
+
+nav a {
+    @apply hover:underline;
+}

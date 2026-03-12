@@ -1,10 +1,50 @@
-
 @import "tailwindcss";
 
-html {
-    @apply bg-[#DFD0B8] text-black ;
+/* 
+    Neon Highlights
+    https://www.vev.design/blog/dark-mode-website-color-palette/
+    check assets/images for ref
+    #0D0D0D - black
+    #FFFFFF - white
+    #00FF85 - green
+    #1E90FF - blue
+    #FF0099 - pink
+
+    Background: #0D0D0D (almost black)
+    Primary Text: #FFFFFF (pure white)
+    Accent 1: #00FF85 (neon green)
+    Accent 2: #1E90FF (electric blue)
+    Hover Effects: #FF0099 (vivid pink)
+-----------------------------------
+    Monochromatic Minimalism
+    https://www.vev.design/blog/dark-mode-website-color-palette/
+
+    #121212
+    #E0E0E0
+    #B0B0B0
+    #444444
+    #888888
+
+    Background: #121212 (charcoal black)
+    Primary Text: #E0E0E0 (light gray)
+    Secondary Text: #B0B0B0 (medium gray)
+    Borders/Dividers: #444444 (dark gray)
+    Accent: #888888 (soft gray)
+
+*/
+
+@theme {
+  --color-primary: #0d0d0d;
+  --color-secondary: #ffffff;
+  --color-accentb: #1e90ff;
+  --color-accentg: #00ff85;
+  --color-accentp: #ff0099;
 }
 
-nav a {
-    @apply hover:underline;
+html {
+  @apply bg-primary text-secondary;
+}
+
+nav li {
+    @apply py-0.5 px-2.5 hover:bg-accentp rounded-full text-center;
 }

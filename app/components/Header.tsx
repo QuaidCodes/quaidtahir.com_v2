@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className="w-full flex justify-center">
       <nav className="m-5 flex justify-between w-2/3">
-        <h1 className="text-nowrap text-4xl" href="/">Quaid Tahir</h1>
+        <h1 className="text-nowrap text-4xl">Quaid Tahir</h1>
 
         <div className="flex w-full flex-auto justify-end gap-10 text-2xl">
           <div>

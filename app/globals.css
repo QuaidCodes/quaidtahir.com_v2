@@ -1,3 +1,8 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
 @import "tailwindcss";
 
 /* 
@@ -39,12 +44,15 @@
   --color-accentb: #1e90ff;
   --color-accentg: #00ff85;
   --color-accentp: #ff0099;
+
+  --font-instrument: "Instrument Serif", serif;
+  --font-roboto: "Roboto Mono" , monospace;
 }
 
 html {
-  @apply bg-primary text-secondary;
+  @apply bg-primary text-secondary font-roboto;
 }
 
-nav li {
-    @apply py-0.5 px-2.5 hover:bg-accentp rounded-full text-center;
+nav a {
+    @apply hover:text-accentb;
 }

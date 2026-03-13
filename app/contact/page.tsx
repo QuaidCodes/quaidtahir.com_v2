@@ -1,6 +1,8 @@
 export default function Contact() {
     return <>
-        <form action="
-        "></form>
+        <form action="">
+            
+
+        </form>
     </>;
 }
